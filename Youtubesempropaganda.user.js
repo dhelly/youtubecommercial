@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Youtube sem propaganda
+// @name         Youtubesempropaganda
 // @namespace    inutil
 // @version      0.1
 // @description  try to take over the world!
