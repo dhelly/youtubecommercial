@@ -1,4 +1,4 @@
-# Script Inútil para passar as propaganda do Youtube automaticamente/Useless script to pass Youtube advertisements automatically #
+# Script Inútil para passar as propaganda do Youtube automaticamente / Useless script to pass Youtube advertisements automatically #
 
 ## Propósito/Purpose ##
 Passa automaticamente as propaganda do youtube, ou seja, o clica no botão.
@@ -20,3 +20,25 @@ Automatically passes youtube ads, ie clicks the button.
 3. Arraste o script para o firefox e selecione a opção instalar
 
 [TamperMonkey]: https://addons.mozilla.org/pt-BR/firefox/addon/tampermonkey/
+
+## Option 2 ###
+In case you did not want to install Tampermonkey. Below is the script for you to run directly through the console.
+Caso você não queria instalar o Tampemonkey. Abaixo tem o script para você rodar diretamente pelo console.
+
+```
+var myVar = setInterval(clicando, 1000);
+
+function clicando() {  
+
+    var botao = $('.ytp-ad-skip-button-text');
+    if(botao != null){
+      $('.ytp-ad-skip-button-text').click();
+    }
+}
+
+function stopclick() {
+  clearInterval(myVar);
+}
+```
+
+
