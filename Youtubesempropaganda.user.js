@@ -13,7 +13,7 @@
     'use strict';
     var $ = window.jQuery;
     console.log('Iniciando o script');
-    var myVar = setInterval(press, 1000);
+    var myVar = setInterval(press, 300);
 
         function press() {
             <!-- console.log('verificando'); !>
